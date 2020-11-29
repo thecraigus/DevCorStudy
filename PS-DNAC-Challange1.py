@@ -6,8 +6,6 @@ username = "devnetuser"
 password = "Cisco123!"
 headers = {'content-type': 'application/json'}
 
-
-
 def gettoken(username, password):
     authreq = requests.post(baseurl+"/dna/system/api/v1/auth/token", auth=(username, password), headers=headers, verify=False)
     token = authreq.json()
