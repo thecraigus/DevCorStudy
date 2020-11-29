@@ -22,7 +22,7 @@ def getdevices(token):
         hostname = device['hostname']
         ipaddr = device['managementIpAddress']
         devicelist[hostname] = [ipaddr]
-    return (devicelist)
+    return devicelist
 
 def main():
     token = (gettoken(username,password))
